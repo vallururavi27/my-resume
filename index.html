@@ -3,356 +3,223 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valluru Ravi Kumar - Resume</title>
-  <style>
-    /* General Styles */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f9;
-      color: #333;
-    }
-
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header */
-    header {
-      background: #0077b6;
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.2rem;
-      animation: fadeIn 2.5s ease-in-out;
-    }
-
-    /* Navigation */
-    nav {
-      background: #023e8a;
-      padding: 10px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #90e0ef;
-    }
-
-    /* Sections */
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: 20px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      animation: slideIn 1s ease-in-out;
-    }
-
-    section h2 {
-      color: #0077b6;
-      border-bottom: 2px solid #0077b6;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-    /* About Section */
-    #about {
-      text-align: center;
-    }
-
-    #about img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      margin-bottom: 20px;
-      border: 4px solid #0077b6;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    #about p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    /* Skills Section */
-    #skills ul {
-      columns: 2;
-      list-style: none;
-      padding: 0;
-    }
-
-    #skills ul li {
-      margin: 10px 0;
-      padding: 10px;
-      background: #f4f4f9;
-      border-radius: 5px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    #skills ul li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Experience Section */
-    #experience ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    #experience ul li {
-      margin: 20px 0;
-      padding: 20px;
-      background: #f4f4f9;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    #experience ul li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #experience ul li ul {
-      list-style-type: disc;
-      margin: 10px 0 0 20px;
-    }
-
-    /* Portfolio Section */
-    #portfolio .project {
-      margin: 20px 0;
-      padding: 20px;
-      background: #f4f4f9;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    #portfolio .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Contact Section */
-    #contact form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #contact input, #contact textarea {
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    #contact button {
-      background: #0077b6;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1.1rem;
-      transition: background 0.3s ease;
-    }
-
-    #contact button:hover {
-      background: #023e8a;
-    }
-
-    /* Download Resume Button */
-    .download-resume {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .download-resume a {
-      background: #0077b6;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: background 0.3s ease;
-    }
-
-    .download-resume a:hover {
-      background: #023e8a;
-    }
-
-    /* Footer */
-    footer {
-      background: #023e8a;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideIn {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+  <title>Valluru Ravikumar - Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <h1>Valluru Ravikumar</h1>
-    <p>Senior Manager, IT Infrastructure</p>
-    <p>Phone: +8008856333 | Email: valluru.rkchowdary@gmail.com</p>
+    <div class="container">
+      <div class="profile-header">
+        <img src="profile.jpg" alt="Valluru Ravikumar" class="profile-pic">
+        <div>
+          <h1>Valluru Ravikumar</h1>
+          <p>Senior Manager, IT Infrastructure</p>
+          <div class="social-links">
+            <a href="mailto:valluru.rkchowdary@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+8008856333"><i class="fas fa-phone"></i></a>
+            <a href="https://www.linkedin.com/in/ravianet/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/vallururavi27/" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+  <!-- Tabs Navigation -->
+  <nav class="tabs">
+    <div class="container">
+      <ul>
+        <li><a href="#about" class="tab-link active">About</a></li>
+        <li><a href="#experience" class="tab-link">Experience</a></li>
+        <li><a href="#skills" class="tab-link">Skills</a></li>
+        <li><a href="#education" class="tab-link">Education</a></li>
+        <li><a href="#certifications" class="tab-link">Certifications</a></li>
+        <li><a href="#contact" class="tab-link">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="IMG_5883.PNG" alt="Valluru Ravikumar">
-    <p>Hi, I’m Valluru Ravikumar, a Senior Manager in IT Infrastructure with over 15 years of experience in IT Systems & Network Administration. I specialize in Windows and Linux server administration, firewall configuration, and cybersecurity.</p>
-    <!-- Download Resume Button -->
-    <div class="download-resume">
-      <a href="Ravi_Resume_Latest.doc" download>Download Resume</a>
-    </div>
-  </section>
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+       Hi, I’m Valluru Ravikumar, a Senior Manager in IT Infrastructure with over 15 years of experience in IT Systems & Network Administration. I specialize in Windows and Linux server administration, firewall management, End point Security and cybersecurity.
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Team Leadership</li>
-      <li>IT Infra Management</li>
-      <li>IT Network Project Management</li>
-      <li>Windows Azure Active Directory</li>
-      <li>Office 365 Administration</li>
-      <li>Cybersecurity</li>
-      <li>Firewall Administration</li>
-      <li>Endpoint Security</li>
-      <li>VPN Management</li>
-    </ul>
-  </section>
+      </p>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>Senior Manager, IT Infrastructure</strong> - Varsity Educational Management Pvt. Ltd (May 2012 - Present)
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Senior Manager, IT Infrastructure</h3>
+        <p><strong>Organization:</strong> Varsity Educational Management Pvt. Ltd</p>
+        <p><strong>Duration:</strong> May 2012 - Present</p>
+        <h4>Job Profile:</h4>
         <ul>
-          <li>Orchestrated infrastructure planning and deployment across diverse locations.</li>
-          <li>Rolled out secure Wi-Fi infrastructure across 200 sites, employing FortiGate and Sophos firewalls alongside Ruckus, Aruba, and Cisco access points.</li>
-          <li>Administered and monitored various firewalls including FortiGate, Cyberoam, and Sophos for seamless operation across all locations.</li>
-          <li>Oversaw Microsoft O365 administration for a user base exceeding 50,000.</li>
-          <li>Managed Azure Active Directory setup and maintenance, including Azure Connect configuration for on-premises users.</li>
-          <li>Provided comprehensive MDM, DLP, and Endpoint security solutions.</li>
-          <li>Utilized FortiGate Analyzer and iView servers for data traffic monitoring and report generation.</li>
-          <li>Configured and safeguarded public IPs for web and application servers, as well as managed WAN traffic with link load balancer.</li>
-          <li>Troubleshot network issues and offered support to the network team.</li>
-          <li>Established and maintained IPSec, SSL, and VPN tunnels.</li>
-          <li>Implemented and managed bandwidth management for web servers.</li>
-          <li>Conducted availability and bandwidth monitoring through network monitoring tools.</li>
-          <li>Oversaw configuration and user management for DC, ADC, ADFS, and DNS servers.</li>
-          <li>Managed server RAID setup and administration.</li>
-          <li>Supported remote locations' networks using various remote access tools.</li>
-          <li>Monitored internet connectivity for over 500 locations.</li>
-          <li>Employed Nagios and WhatsUp Gold for real-time monitoring of network and server services.</li>
-          <li>Operated private sharing servers such as Netgear, NeXT cloud, and Own cloud.</li>
-          <li>Led a team of 40+ field engineers and coordinated their daily tasks.</li>
-          <li>Provided network and hardware support to remote locations via voice communication.</li>
-          <li>Managed and resolved hardware and network issues for Varsity Education servers.</li>
-          <li>Maintained End-Point Protection Antivirus Server across Symantec, K7, and Escan platforms.</li>
-          <li>Installed, maintained, and managed Windows Server versions from 2003 to 2019.</li>
-          <li>Implemented asset management and tracked hardware issues effectively.</li>
+          <li>Orchestrating infrastructure planning and deployment across diverse locations.</li>
+          <li>Rolling out secure Wi-Fi infrastructure across 200 sites, employing FortiGate and Sophos firewalls alongside Ruckus, Aruba, and Cisco access points.</li>
+          <li>Administering and monitoring various firewalls including FortiGate, Cyberoam, and Sophos for seamless operation across all locations.</li>
+          <li>Overseeing Microsoft O365 administration for a user base exceeding 50,000.</li>
+          <li>Managing Azure Active Directory setup and maintenance, including Azure Connect configuration for on-premises users.</li>
+          <li>Providing comprehensive MDM, DLP, and Endpoint security solutions.</li>
+          <li>Utilizing FortiGate Analyzer and iView servers for data traffic monitoring and report generation.</li>
+          <li>Configuring and safeguarding public IPs for web and application servers, as well as managing WAN traffic with link load balancer.</li>
+          <li>Troubleshooting network issues and offering support to the network team.</li>
+          <li>Establishing and maintaining IPSec, SSL, and VPN tunnels.</li>
+          <li>Implementing and managing bandwidth management for web servers.</li>
+          <li>Conducting availability and bandwidth monitoring through network monitoring tools.</li>
+          <li>Overseeing configuration and user management for DC, ADC, ADFS, and DNS servers.</li>
+          <li>Managing server RAID setup and administration.</li>
+          <li>Supporting remote locations' networks using various remote access tools.</li>
+          <li>Monitoring internet connectivity for over 500 locations.</li>
+          <li>Employing Nagios and WhatsUp Gold for real-time monitoring of network and server services.</li>
+          <li>Operating private sharing servers such as Netgear, NeXT cloud, and Own cloud.</li>
+          <li>Leading a team of 40+ field engineers and coordinating their daily tasks.</li>
+          <li>Providing network and hardware support to remote locations via voice communication.</li>
+          <li>Managing and resolving hardware and network issues for Varsity Education servers.</li>
+          <li>Maintaining End-Point Protection Antivirus Server across Symantec, K7, and Escan platforms.</li>
+          <li>Installing, maintaining, and managing Windows Server versions from 2003 to 2019.</li>
+          <li>Implementing asset management and tracking hardware issues effectively.</li>
         </ul>
-      </li>
-      <li>
-        <strong>System and Network Administrator</strong> - St. Xavier's Educational Society (Jan 2006 - May 2012)
+      </div>
+
+      <div class="job">
+        <h3>System and Network Administrator</h3>
+        <p><strong>Organization:</strong> St. Xavier's Educational Society</p>
+        <p><strong>Duration:</strong> Jan 2006 - May 2012</p>
+        <h4>Job Profile:</h4>
         <ul>
-          <li>Maintained all Server and Desktop installations and configurations.</li>
-          <li>Administered Domain Server and deployed operating systems to client systems.</li>
-          <li>Managed Operating System updates and Microsoft update server monitoring.</li>
-          <li>Administered Antivirus servers and performed virus scanning of all office systems and servers.</li>
-          <li>Managed web server and mail server administration.</li>
-          <li>Maintained database backups for all SQL Servers and backup media like CDs, DVDs, and DAT cartridges.</li>
-          <li>Provided technical coordination with branch offices.</li>
-          <li>Configured MS Outlook and Outlook Express.</li>
+          <li>Maintain all Server and Desktop Installing & Configuring Software.</li>
+          <li>Domain Server Administration.</li>
+          <li>Deploying Operating system to client Systems.</li>
+          <li>Operating System Update Administration.</li>
+          <li>Microsoft update server monitoring.</li>
+          <li>Antivirus server administration.</li>
+          <li>Virus scanning of all office systems & servers.</li>
+          <li>Web server administration.</li>
+          <li>Mail server administration.</li>
+          <li>Maintain database backup for all SQL Servers.</li>
+          <li>Maintenance of backup media like CDs, DVDs, DAT cartridges.</li>
+          <li>Technical coordination with a branch office.</li>
+          <li>Configuring MS Outlook, Outlook Express.</li>
         </ul>
-      </li>
-    </ul>
-  </section>
+      </div>
+    </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-      <h3>Project 1: Secure Wi-Fi Infrastructure</h3>
-      <p>Deployed secure Wi-Fi infrastructure across 200 sites using FortiGate and Sophos firewalls.</p>
-    </div>
-    <div class="project">
-      <h3>Project 2: Azure Active Directory Setup</h3>
-      <p>Managed Azure Active Directory setup and maintenance for over 50,000 users.</p>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Windows Azure Active Directory Server</li>
+            <li>Office 365 Administration</li>
+            <li>Cyber Security</li>
+            <li>Firewall Configuration and Administration</li>
+            <li>Endpoint Security</li>
+            <li>Creating VPN Users and Tunnels</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Team Leadership</li>
+            <li>Time Management</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-card">
+        <h3>Bachelor of Engineering (B.E)</h3>
+        <p>Thiruvalluvar University (2002-2006)</p>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="certification-card">
+        <h3>Microsoft Certified System Engineer (MCSE) 2003</h3>
+      </div>
+      <div class="certification-card">
+        <h3>Sophos Certified Engineer</h3>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>Email: <a href="mailto:valluru.rkchowdary@gmail.com">valluru.rkchowdary@gmail.com</a></li>
+        <li>Phone: <a href="tel:+8008856333">+8008856333</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/ravianet/" target="_blank">linkedin.com/in/ravianet</a></li>
+        <li>GitHub: <a href="https://github.com/vallururavi27/" target="_blank">github.com/vallururavi27</a></li>
+      </ul>
+      <!-- Download Resume Button -->
+      <div class="download-resume">
+        <a href="resume.pdf" download="resume.pdf" class="resume-button">
+          <i class="fas fa-download"></i> Download My Resume (PDF)
+        </a>
+      </div>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Valluru Ravikumar. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Valluru Ravikumar. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    // JavaScript for Smooth Scrolling and Tab Highlighting
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const sections = document.querySelectorAll('section');
+
+    // Smooth scroll to section when a tab is clicked
+    tabLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+
+        // Highlight the active tab
+        tabLinks.forEach(tab => tab.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // Highlight the active tab based on scroll position
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      tabLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
